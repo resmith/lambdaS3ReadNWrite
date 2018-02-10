@@ -1,1 +1,2 @@
 # lambdaResizeToThumbnail
+# lambdaS3ReadNWrite
