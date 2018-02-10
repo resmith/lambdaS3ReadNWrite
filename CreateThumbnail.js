@@ -20,9 +20,13 @@ exports.handler = function(event, context, callback) {
     var srcKey    =
     decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));  
 
-    var dstBucket = srcBucket.replace("orig", "") + "-tn";
+    var dstBucket = srcBucket.replace("-orig", "") + "-tn";
     // var dstBucket = srcBucket + "-tn";
     var dstKey    = "tn-" + srcKey;
+    console.log("srcBucket:", srcBucket);
+    console.log("srcKey:", srcKey);
+    console.log("dstBucket:", dstBucket);
+    console.log("dstKey:", dstKey);    
 
     // Sanity check: validate that source and destination are different buckets.
     if (srcBucket == dstBucket) {
