@@ -1,3 +1,4 @@
 aws lambda delete-function \
 --region us-east-1 \
---function-name CreateThumbnail \
+--function-name lambdaS3ReadNWrite \
+--profile adminuser 

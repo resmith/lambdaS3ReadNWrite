@@ -1,5 +1,5 @@
 aws lambda add-permission \
---function-name CreateThumbnail \
+--function-name lambdaS3ReadNWrite \
 --region us-east-1 \
 --statement-id 1 \
 --action "lambda:InvokeFunction" \

@@ -1,2 +1,2 @@
-rm CreateThumbnail.zip
-zip -r CreateThumbnail.zip *
+rm lambdaS3ReadNWrite.zip
+zip -r lambdaS3ReadNWrite.zip *

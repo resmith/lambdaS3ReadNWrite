@@ -1,3 +1,3 @@
 aws lambda get-policy \
---function-name CreateThumbnail \
+--function-name lambdaS3ReadNWrite \
 --profile adminuser
